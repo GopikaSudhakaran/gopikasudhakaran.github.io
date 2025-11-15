@@ -1,0 +1,29 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    max-width: 900px;
+    margin: auto;
+    padding: 30px;
+    color: #222;
+}
+.nav a {
+    margin-right: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #444;
+}
+.nav a:hover { color: #000; }
+
+.profile-pic {
+    width: 150px; height: 150px; border-radius: 50%; object-fit: cover;
+}
+.header {
+    display: flex; gap: 25px; align-items: center; margin-bottom: 30px;
+}
+h1 { font-size: 32px; }
+.tag-list li {
+    background: #f2f2f2; display: inline-block; padding: 6px 12px; 
+    margin: 5px; border-radius: 6px;
+}
+.pub, .project-card {
+    padding: 15px; border: 1px solid #ddd; border-radius: 8px; margin: 12px 0;
+}
