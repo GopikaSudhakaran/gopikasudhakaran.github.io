@@ -1,105 +1,141 @@
 /* style.css */
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-    max-width: 800px;
-    margin: auto;
-    padding: 40px 20px;
-    color: #333;
-    line-height: 1.6;
-    background-color: #fdfdfd;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  color: #333;
+  line-height: 1.6;
+  background-color: #fff;
 }
 
-/* NAVIGATION */
-.nav {
-    margin-bottom: 40px;
-    border-bottom: 1px solid #eee;
-    padding-bottom: 15px;
+/* LINKS */
+a {
+  color: #0066cc;
+  text-decoration: none;
 }
-.nav a {
-    margin-right: 25px;
-    text-decoration: none;
-    font-weight: 600;
-    color: #555;
-    font-size: 1.1rem;
-}
-.nav a:hover, .nav a.active { 
-    color: #1a73e8; 
-    border-bottom: 2px solid #1a73e8; 
+a:hover {
+  text-decoration: underline;
 }
 
-/* HEADER */
+/* HEADER PROFILE */
 .header {
-    display: flex; 
-    gap: 30px; 
-    align-items: center; 
-    margin-bottom: 40px;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  margin-bottom: 50px;
 }
 .profile-pic {
-    width: 140px; 
-    height: 140px; 
-    border-radius: 50%; 
-    object-fit: cover;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
-.title {
-    margin: 0;
-    font-size: 2.5rem;
-    letter-spacing: -0.5px;
-    color: #202124;
+.title-block h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  color: #111;
 }
 .subtitle {
-    font-size: 1.2rem;
-    color: #5f6368;
-    margin: 5px 0 15px 0;
+  font-size: 1.1rem;
+  color: #555;
+  margin: 5px 0 15px 0;
 }
-.links a {
-    color: #1a73e8;
-    text-decoration: none;
-    font-weight: 600;
-    margin-right: 10px;
-}
-.links a:hover { text-decoration: underline; }
 
-/* HEADINGS */
-h1, h2, h3 {
-    color: #202124;
-    margin-top: 1.5em;
+/* SECTIONS */
+section {
+  margin-bottom: 60px;
 }
-h1 { margin-bottom: 0.5em; }
+h3 {
+  font-size: 1.4rem;
+  color: #111;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
 
-/* TAGS */
+/* RESEARCH INTEREST TAGS */
 .tag-list {
-    padding: 0;
-    list-style: none;
+  padding: 0;
+  list-style: none;
 }
 .tag-list li {
-    background: #e8f0fe;
-    color: #1967d2;
-    display: inline-block; 
-    padding: 6px 14px; 
-    margin: 5px 5px 5px 0; 
-    border-radius: 20px;
-    font-size: 0.9rem;
-    font-weight: 500;
+  background: #f4f6f8;
+  color: #333;
+  display: inline-block;
+  padding: 6px 12px;
+  margin: 0 8px 8px 0;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: 500;
 }
 
-/* CARDS (Pubs & Projects) */
-.pub, .project-card {
-    background: white;
-    padding: 25px; 
-    border: 1px solid #dadce0; 
-    border-radius: 8px; 
-    margin: 20px 0;
-    transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+/* PUBLICATION GRID (The "Thumbnail" Style) */
+.pub-item {
+  display: flex;
+  gap: 25px;
+  margin-bottom: 30px;
+  align-items: flex-start;
 }
-.pub:hover, .project-card:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
-    border-color: #1a73e8;
+
+.pub-thumb {
+  width: 160px;       /* Fixed width for consistency */
+  height: auto;
+  border-radius: 4px;
+  border: 1px solid #eee;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  flex-shrink: 0;     /* Prevents image from squishing */
 }
-.project-card h3, .pub h3 { 
-    margin-top: 0; 
-    color: #1a73e8; 
-    font-size: 1.2rem;
+
+.pub-content {
+  flex-grow: 1;
 }
-.pub p, .project-card p { margin-bottom: 0; margin-top: 8px; }
+
+.pub-title {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #111;
+  margin-bottom: 4px;
+  display: block;
+}
+
+.pub-authors {
+  color: #444;
+  margin-bottom: 4px;
+}
+
+.pub-venue {
+  font-style: italic;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.pub-links a {
+  margin-right: 12px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+/* EDUCATION / EXPERIENCE LISTS */
+.edu-item {
+  margin-bottom: 20px;
+}
+.edu-title {
+  font-weight: 700;
+  color: #111;
+}
+.edu-date {
+  float: right;
+  color: #777;
+  font-size: 0.95rem;
+}
+
+/* MOBILE ADJUSTMENTS */
+@media (max-width: 600px) {
+  .header { flex-direction: column; text-align: center; }
+  .pub-item { flex-direction: column; }
+  .pub-thumb { width: 100%; max-width: 300px; margin-bottom: 10px; }
+  .edu-date { float: none; display: block; margin-bottom: 2px;}
+}
