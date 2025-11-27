@@ -4,239 +4,163 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gopika Sudhakaran</title>
-    <style>
-        /* --- CSS STYLES --- */
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            max-width: 850px;
-            margin: auto;
-            padding: 40px 20px;
-            color: #333;
-            line-height: 1.6;
-            background-color: #fdfdfd;
-            scroll-behavior: smooth; /* Enables smooth scrolling */
-        }
-
-        /* NAVIGATION */
-        .nav {
-            position: sticky; /* Keeps nav visible while scrolling */
-            top: 0;
-            background: #fdfdfd; /* Matches body bg */
-            z-index: 100;
-            margin-bottom: 40px;
-            border-bottom: 1px solid #eee;
-            padding: 15px 0;
-        }
-        .nav a {
-            margin-right: 25px;
-            text-decoration: none;
-            font-weight: 600;
-            color: #555;
-            font-size: 1.1rem;
-            transition: color 0.2s;
-        }
-        .nav a:hover { 
-            color: #1a73e8; 
-            border-bottom: 2px solid #1a73e8; 
-        }
-
-        /* HEADER */
-        .header {
-            display: flex; 
-            gap: 40px; 
-            align-items: center; 
-            margin-bottom: 50px;
-            margin-top: 20px;
-        }
-        .profile-pic {
-            width: 150px; 
-            height: 150px; 
-            border-radius: 50%; 
-            object-fit: cover;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-            border: 3px solid white;
-        }
-        .title {
-            margin: 0;
-            font-size: 2.8rem;
-            letter-spacing: -0.5px;
-            color: #202124;
-        }
-        .subtitle {
-            font-size: 1.3rem;
-            color: #5f6368;
-            margin: 8px 0 20px 0;
-            font-weight: 400;
-        }
-        .links a {
-            color: #1a73e8;
-            text-decoration: none;
-            font-weight: 600;
-            margin-right: 15px;
-            font-size: 1rem;
-        }
-        .links a:hover { text-decoration: underline; }
-
-        /* SECTIONS */
-        section {
-            margin-bottom: 60px; /* Space between sections */
-            scroll-margin-top: 80px; /* Offset for sticky header */
-        }
-        h2 {
-            font-size: 1.8rem;
-            color: #202124;
-            border-bottom: 2px solid #f1f3f4;
-            padding-bottom: 10px;
-            margin-bottom: 25px;
-        }
-        h3 {
-            color: #1a73e8;
-            margin-bottom: 0.5em;
-            font-size: 1.3rem;
-        }
-
-        /* TAGS */
-        .tag-list {
-            padding: 0;
-            list-style: none;
-            margin-top: 10px;
-        }
-        .tag-list li {
-            background: #e8f0fe;
-            color: #1967d2;
-            display: inline-block; 
-            padding: 6px 14px; 
-            margin: 0 8px 8px 0; 
-            border-radius: 20px;
-            font-size: 0.95rem;
-            font-weight: 500;
-        }
-
-        /* CARDS */
-        .card {
-            background: white;
-            padding: 25px; 
-            border: 1px solid #dadce0; 
-            border-radius: 10px; 
-            margin-bottom: 20px;
-            transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
-        }
-        .card:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-            border-color: #1a73e8;
-        }
-        .card p {
-            margin: 0;
-            color: #444;
-        }
-        .card .meta {
-            font-size: 0.9rem;
-            color: #666;
-            margin-top: 8px;
-            display: block;
-        }
-        
-        /* SUB-HEADINGS inside sections */
-        .section-subhead {
-            font-size: 1.1rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            color: #888;
-            margin: 30px 0 15px 0;
-            font-weight: 700;
-        }
-
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<nav class="nav">
-    <a href="#about">About</a>
-    <a href="#projects">Research & Projects</a>
-    <a href="#publications">Publications</a>
-</nav>
+<div class="container">
 
-<section id="about">
-    <header class="header">
-        <img src="images/profile.jpg" class="profile-pic" alt="Gopika Sudhakaran">
-        <div>
-            <h1 class="title">Gopika Sudhakaran</h1>
-            <p class="subtitle">PhD Student · TU Darmstadt · Neuro-Symbolic AI</p>
-            <p class="links">
-                <a href="https://scholar.google.com/YOUR_PROFILE" target="_blank">Google Scholar</a>
-                <a href="https://www.linkedin.com/in/YOUR_PROFILE" target="_blank">LinkedIn</a>
-                <a href="https://github.com/YOUR_PROFILE" target="_blank">GitHub</a>
+    <div class="header">
+        <img src="images/profile.jpg" alt="Gopika Sudhakaran" class="profile-pic">
+        <div class="title-block">
+            <h1>Gopika Sudhakaran</h1>
+            <h2>PhD Candidate · TU Darmstadt</h2>
+            <p class="subtitle">Visual Inference Lab & AIML Lab</p>
+            <p class="contact-info">
+                <a href="https://scholar.google.com/citations?user=QZS6FjoAAAAJ&hl=en" target="_blank">Google Scholar</a> ·
+                <a href="https://www.linkedin.com/in/gopika-sudhakaran-7a289755/" target="_blank">LinkedIn</a> ·
+                <a href="https://github.com/GopikaSudhakaran" target="_blank">GitHub</a>
             </p>
+            <p class="email">gopika.sudhakaran@tu-darmstadt.de</p>
         </div>
-    </header>
+    </div>
 
-    <p>
-        I am a PhD student at <b>TU Darmstadt</b> (advisors: Prof. Stefan Roth, Prof. Kristian Kersting) 
-        specializing in <b>Structured Reasoning</b>, <b>Neuro-Symbolic AI</b>, and <b>Vision-Language Models</b>.
-    </p>
-    <p>
-        Targeting robust OOD generalization, I extend structured scene understanding to embodied agents—integrating 
-        open-vocabulary perception with logic to <b>rescue frozen RL agents</b> and benchmark ego-centric reasoning. 
-        My work has been published at top-tier venues including <b>ICCV</b> and <b>NeurIPS</b>.
-    </p>
-
-    <ul class="tag-list">
-        <li>Neuro-Symbolic AI</li>
-        <li>Vision–Language Models</li>
-        <li>Causal Reasoning</li>
-        <li>Embodied Agents</li>
-        <li>OOD Generalization</li>
-    </ul>
-</section>
-
-<section id="projects">
-    <h2>Current Research & Projects</h2>
-
-    <div class="card">
-        <h3>ThinkRL: Neuro-Symbolic Cognitive Co-Pilot</h3>
+    <section>
+        <h3>About Me</h3>
         <p>
-            A modular framework to <b>rescue frozen RL agents</b> in OOD scenarios using open-vocabulary perception and logic. 
-            Overcomes the closed-world assumption of prior neuro-symbolic methods by grounding novel objects zero-shot.
+            I am a PhD candidate at TU Darmstadt, advised by <b>Prof. Stefan Roth</b> (Visual Inference Lab) 
+            and <b>Prof. Kristian Kersting</b> (AIML Lab). 
         </p>
-    </div>
-
-    <div class="card">
-        <h3>Benchmarking Faithfulness in VLM Reasoning</h3>
         <p>
-            Investigating "Clever Hans" effects in Vision-Language Models using a custom <b>ego-centric reasoning benchmark</b> 
-            to distinguish genuine spatial reasoning from statistical pattern matching.
+            My research focuses on <b>vision–language models</b>, <b>scene understanding</b>, and <b>structured reasoning</b>. 
+            Currently, I am expanding this work into <b>Neuro-Symbolic AI for embodied agents</b>, investigating how to integrate 
+            <b>open-vocabulary perception</b> with <b>logic</b> to achieve robust generalization in out-of-distribution (OOD) scenarios.
         </p>
+    </section>
+
+    <section>
+        <h3>Research Interests</h3>
+        <ul class="skill-list">
+            <li>Vision–Language Models</li>
+            <li>Scene Graphs & Structured Reasoning</li>
+            <li>OOD Generalization & Robustness</li>
+            <li>Neuro-Symbolic AI</li>
+            <li>Embodied Agents</li>
+            <li>Active Learning</li>
+        </ul>
+    </section>
+
+    <section>
+        <h3>Publications</h3>
+
+        <div class="pub-item">
+            <div class="pub-title"><a href="https://openaccess.thecvf.com/content/ICCV2025/papers/Sudhakaran_ART_Adaptive_Relation_Tuning_for_Generalized_Relation_Prediction_ICCV_2025_paper.pdf" target="_blank">ART: Adaptive Relation Tuning for Generalized Relation Prediction</a></div>
+            <div class="pub-authors"><b>Gopika Sudhakaran</b>, Hikaru Shindo, Patrick Schramowski, Simone Schaub-Meyer, Kristian Kersting, Stefan Roth</div>
+            <div class="pub-venue">ICCV 2025</div>
+            <div class="pub-links">
+                <a href="https://openaccess.thecvf.com/content/ICCV2025/papers/Sudhakaran_ART_Adaptive_Relation_Tuning_for_Generalized_Relation_Prediction_ICCV_2025_paper.pdf" target="_blank">PDF</a> · 
+                <a href="https://github.com/visinf/ART" target="_blank">Code</a> · 
+                <a href="https://www.youtube.com/watch?v=mqZXhgAA52w&t=2s" target="_blank">Video</a>
+            </div>
+        </div>
+
+        <div class="pub-item">
+            <div class="pub-title"><a href="https://proceedings.neurips.cc/paper_files/paper/2024/file/5ddcfaad1cb72ce6f1a365e8f1ecf791-Paper-Conference.pdf" target="_blank">DeiSAM: Segment Anything with Deictic Prompting</a></div>
+            <div class="pub-authors">Hikaru Shindo, Manuel Brack, <b>Gopika Sudhakaran</b>, Devendra Singh Dhami, Patrick Schramowski, Kristian Kersting</div>
+            <div class="pub-venue">NeurIPS 2024</div>
+            <div class="pub-links">
+                <a href="https://proceedings.neurips.cc/paper_files/paper/2024/file/5ddcfaad1cb72ce6f1a365e8f1ecf791-Paper-Conference.pdf" target="_blank">PDF</a> · 
+                <a href="https://github.com/ml-research/deictic-segment-anything" target="_blank">Code</a>
+            </div>
+        </div>
+
+        <div class="pub-item">
+            <div class="pub-title"><a href="https://arxiv.org/pdf/2408.14584" target="_blank">DIAGen: Semantically Diverse Image Augmentation for Few-Shot Learning</a></div>
+            <div class="pub-authors">Tobias Lingenberg, Markus Reuter, <b>Gopika Sudhakaran</b>, Dominik Gojny, Stefan Roth, Simone Schaub-Meyer</div>
+            <div class="pub-venue">GCPR 2024</div>
+            <div class="pub-links">
+                <a href="https://arxiv.org/pdf/2408.14584" target="_blank">PDF</a> · 
+                <a href="https://github.com/visinf/DIAGen" target="_blank">Code</a>
+            </div>
+        </div>
+
+        <div class="pub-item">
+            <div class="pub-title"><a href="https://openaccess.thecvf.com/content/ICCV2023/papers/Sudhakaran_Vision_Relation_Transformer_for_Unbiased_Scene_Graph_Generation_ICCV_2023_paper.pdf" target="_blank">Vision Relation Transformer for Unbiased Scene Graph Generation (VETO)</a></div>
+            <div class="pub-authors"><b>Gopika Sudhakaran</b>, Devendra Singh Dhami, Kristian Kersting, Stefan Roth</div>
+            <div class="pub-venue">ICCV 2023</div>
+            <div class="pub-links">
+                <a href="https://openaccess.thecvf.com/content/ICCV2023/papers/Sudhakaran_Vision_Relation_Transformer_for_Unbiased_Scene_Graph_Generation_ICCV_2023_paper.pdf" target="_blank">PDF</a> · 
+                <a href="https://github.com/visinf/veto" target="_blank">Code</a> · 
+                <a href="https://www.youtube.com/watch?v=N4YqmfDY-t0" target="_blank">Video</a>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h3>Education</h3>
+        <div class="item">
+            <div class="item-header">
+                <span class="item-title">PhD in Computer Science</span>
+                <span class="item-date">Oct 2021 – Present</span>
+            </div>
+            <div class="item-sub">TU Darmstadt, Germany</div>
+            <p>Advisors: Prof. Stefan Roth & Prof. Kristian Kersting</p>
+        </div>
+
+        <div class="item">
+            <div class="item-header">
+                <span class="item-title">M.Sc. in Data Analytics</span>
+                <span class="item-date">Apr 2019 – Aug 2021</span>
+            </div>
+            <div class="item-sub">University of Hildesheim, Germany</div>
+            <p>Final Grade: 1.2 (Excellent) · Thesis Grade: 1.0 (Bosch Corporate Research)</p>
+        </div>
+
+        <div class="item">
+            <div class="item-header">
+                <span class="item-title">B.E. in Computer Science & Engineering</span>
+                <span class="item-date">Jul 2011 – May 2015</span>
+            </div>
+            <div class="item-sub">PSG College of Technology, India</div>
+            <p>Final Grade: 8.3/10 (First Class) · Thesis Grade: 10/10 (McKinsey & Co.)</p>
+        </div>
+    </section>
+
+    <section>
+        <h3>Experience</h3>
+        
+        <div class="item">
+            <div class="item-header">
+                <span class="item-title">Master Thesis Student</span>
+                <span class="item-date">Jan 2021 – Jun 2021</span>
+            </div>
+            <div class="item-sub">Bosch Corporate Research · Renningen</div>
+            <p>Developed active learning frameworks for object detection with calibration analysis.</p>
+        </div>
+
+        <div class="item">
+            <div class="item-header">
+                <span class="item-title">Machine Learning Intern</span>
+                <span class="item-date">May 2020 – Oct 2020</span>
+            </div>
+            <div class="item-sub">Bosch GmbH · Abstatt</div>
+            <p>Analyzed adversarial robustness of perception models for automated driving.</p>
+        </div>
+
+        <div class="item">
+            <div class="item-header">
+                <span class="item-title">Data Analyst</span>
+                <span class="item-date">Jul 2015 – Aug 2018</span>
+            </div>
+            <div class="item-sub">McKinsey & Company · Chennai</div>
+            <p>Built recommendation systems and analytics pipelines for global financial clients.</p>
+        </div>
+    </section>
+
+    <div class="footer">
+        <p>&copy; 2025 Gopika Sudhakaran</p>
     </div>
-</section>
 
-<section id="publications">
-    <h2>Selected Publications</h2>
-
-    <div class="card">
-        <h3>ART: Adaptive Relation Tuning for Generalized Relation Prediction</h3>
-        <p><b>G. Sudhakaran</b>, H. Shindo, P. Schramowski, S. Schaub-Meyer, K. Kersting, S. Roth.</p>
-        <span class="meta">ICCV 2025</span>
-    </div>
-
-    <div class="card">
-        <h3>DeiSAM: Segment Anything with Deictic Prompting</h3>
-        <p>H. Shindo, M. Brack, <b>G. Sudhakaran</b>, D. Dhami, P. Schramowski, K. Kersting.</p>
-        <span class="meta">NeurIPS 2024</span>
-    </div>
-
-    <div class="card">
-        <h3>DIAGen: Semantically Diverse Image Augmentation for Few-Shot Learning</h3>
-        <p>T. Lingenberg, M. Reuter, <b>G. Sudhakaran</b>, D. Gojny, S. Roth, S. Schaub-Meyer.</p>
-        <span class="meta">GCPR 2024</span>
-    </div>
-
-    <div class="card">
-        <h3>Vision Relation Transformer for Unbiased Scene Graph Generation (VETO)</h3>
-        <p><b>G. Sudhakaran</b>, D. Dhami, K. Kersting, S. Roth.</p>
-        <span class="meta">ICCV 2023</span>
-    </div>
-</section>
-
-</body>
+</div> </body>
 </html>
